@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'liberation_sansregular';
+  src: url('../fonts/liberationsans-regular-webfont.eot');
+  src: url('../fonts/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/liberationsans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/liberationsans-regular-webfont.woff') format('woff'),
+    url('../fonts/liberationsans-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-image:url(../img/background.png);
+}
+.wraper{
+  width: 1215px;
+  height: 1064px;
+  margin: 0 auto;
+}
+.header{
+  position: relative;
+  background-image: url(../img/background_header.png);
+  width: 1215px;
+  height: 36px;
+}
+.menu{
+  position: absolute;
+  left: 460px;
+  width: 383px;
+  height: 36px;
+  font-size: 14px;
+}
+.menu li{
+  height: 36px;
+  margin: 0 0px 0 0px;
+  display: inline-block;
+}
+.menu li a{
+  display: block;
+  height: inherit;
+  padding: 0px 9px;
+  margin: 0 0px 0 0;
+  font-size: 14px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(96, 181, 237);
+  line-height: 2.5;
+  font-weight: 400;
+  text-decoration:none;
+}
+.menu li a:hover {
+  height: 36px;
+  background-color: #4eabda;
+  color: rgb(255, 255,255);
+  font-weight: 500;
+  padding: 0px 9px;
+  margin: 0 0px 0 0;
+}
+.ofertas{
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 843px;
+  width: 143px;
+  height: 27px;
+  border-left: 1px solid #56a2dc;
+  padding: 4px 0 0 17px;
+  font-size: 14px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(254,254,254);
+}
+.ofertas span{
+  position: absolute;
+  top: 11px;
+  margin: -2px 0 0 8px;
+}
+.ofertas div{
+  position: absolute;
+  top: -2px;
+  left: 160px;
+  width: 191px;
+  height: 36px;
+  background-image: url(../img/ofertas.png);
+  line-height: 2.6;
+  text-indent: 13px;
+}
+.ofertas div a{
+  color: rgb(254,254,254);
+}
+.conteiner{
+  width: 1215px;
+  height: 1028px;
+  background-image: url(../img/image.png);
+  display: table-cell;
+  vertical-align: middle;
+}
+.form{
+  position: relative;
+  margin: 0 auto;
+  width: 560px;
+  height: 613px;
+  background-color: rgba(0,0,0,0.63);
+}
+h1{
+  font-size: 25px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(255,255,255);
+  line-height: 2.5;
+  text-align: center;
+  border-bottom: 2px solid #b6bea9;
+}
+.log_in_fb a{
+  position: absolute;
+  top: 100px;
+  left: 142px;
+  width: 276px;
+  height: 35px;
+  background-image: url(../img/log_in_fb.png);
+}
+h2{
+  position: absolute;
+  top: 155px;
+  left: 142px;
+  width: 276px;
+  font-size: 14px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(255,255,255);
+  line-height: 2.5;
+  text-align: center;
+  background-image: url(../img/line-ou-.png);
+  background-repeat: no-repeat;
+  background-position: center
+}
+form{
+  position: absolute;
+  top: 208px;
+  left: 141px;
+  width: 276px;
+}
+#first_name,
+#last_name,
+#email,
+#password_choose,
+#password_confirm{
+  display: block;
+  width: 276px;
+  height: 35px;
+  margin: 0 auto 18px;
+  padding: 0;
+  background-image: url(../img/form.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  text-indent: 16px;
+  font-size: 14px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(254,254,254);
+}
+#first_name:hover,
+#last_name:hover,
+#email:hover,
+#password_choose:hover,
+#password_confirm:hover{
+  background-image: url(../img/form_hover.png);
+  box-shadow: 0px 0px 15px 2px rgba(86, 162, 220, 1);
+}
+#send_me{
+  margin: -3px 5px 0;
+}
+label{
+  font-size: 14px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(204, 204, 204);
+}
+button{
+  width: 151px;
+  height: 37px;
+  margin: 21px 0 0 65px;
+  background-image: url(../img/button.png);
+  font-size: 14px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(254,254,254);
+  border: 0;
+  border-radius: 3px;
+}
+p{
+  margin: 500px 120px 0;
+  font-size: 11px;
+  font-family: liberation_sansregular, sans-serif;
+  color: rgb(204, 204, 204);
+  text-align: center;
+  line-height: 1.6;
+}
