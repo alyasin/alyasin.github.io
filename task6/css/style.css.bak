@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 1000px;
+  height: 1310px;
+  background-color: white;
+}
+header{
+  margin: 16px 0 0 45px;
+  width: 909px;
+  height: 300px;
+  
+}
+.telephone{
+  margin: 3px 3px 0 4px;
+  float: left
+}
+.telephone p{
+  font-size: 19px;
+  font-family: "Arial";
+  color: rgb(94, 105, 109);
+  line-height: 1.5;
+  float: left;
+}
+
+.avtoriz{
+  display: inline-block;
+  margin: 0px 10px 0 11px;
+  width: 500px;
+  height: 38px;
+  background-image: url(../img/avtoriz.png);
+  background-repeat: no-repeat;
+  float: left;
+}
+.avtoriz form{
+  margin: 5px 0 0 25px;
+  width: 470px;
+  height: 18px;
+/*  float: left;*/
+}
+.avtoriz input{
+  margin: -1px 7px 0 0px;
+  width: 111px;
+  height: 14px;
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode";
+  color: rgb(151, 162, 166);
+  line-height: 1.2;
+  text-indent: 2px;
+  letter-spacing: -0.07em;
+  float: left;
+}
+.avtoriz button{
+  background-color: inherit;
+  border-style: hidden;
+  margin: 0 4px 0 0;
+  height: 14px;
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode";
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.08em;
+  float: left;
+}
+.avtoriz a{
+  margin: 2px 0 0 18px;
+  height: 14px;
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode";
+  color: rgb(191, 191, 191);
+  line-height: 1.1;
+  text-decoration: underline;
+/*  float: left;*/
+}
+.navi{
+  width: 85px;
+  height: 33px;
+  margin: -2px 0 0 0;
+  padding: 0px 0 0 0px;
+  background-image: url(../img/navi.png);
+  background-repeat: no-repeat;
+  float: left;
+}
+.navi a{
+  display: inline-block;
+  margin: 8px 0 0 0px;
+  width: 24px;
+  height: 15px;
+  clear: both;
+/*  color: inherit;*/
+}
+.menu_header{
+  width: 918px;
+  height: 41px;
+  margin: 3px 0 0 -2px;
+/*  padding: 0 0 0 130px;*/
+  background-image: url(../img/menu_header.png);
+}
+.menu_header>ul{
+  margin: 0 0 0 130px;
+}
+.menu_header>ul>li a{
+  display: inline-block;
+  height: 36px;
+  margin: 0 0px;
+  padding: 0 1.0em;
+  font-size: 15px;
+  font-family: "Lucida Sans Unicode";
+  color: rgb(255, 255, 255);
+  line-height: 2.5;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  float: left;
+}
+.menu_header img{
+  margin: 8px 0 0 54px;
+  float: left;
+}
+.menu_header p{
+  font-size: 11px;
+  font-family: "Arial";
+  color: rgb(146, 155, 159);
+  line-height: 3;
+  text-indent: 6px;
+  letter-spacing: -0.0em;
+
+
+  
+}
+.menu_header span{
+  margin: 0 15px 0 5px;
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(13, 90, 143);
+  line-height: 1.2;
+  letter-spacing: -0.0em;
+}
