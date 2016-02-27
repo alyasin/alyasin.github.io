@@ -1,4 +1,5 @@
 body{
+  margin: 0 auto;
   width: 1000px;
   height: 1310px;
   background-color: white;
@@ -205,13 +206,11 @@ nav .mail{
   margin: 15px 40px 0px;
   padding: 0 0 0 0;
   clear: both;
-/*  background-color: gray*/
 }
 .left{
   float: left;
   width: 190px;
   margin: 0px 0px 0px;
-
   font-size: 14px;
   font-family: "Lucida Sans Unicode";
   color: rgb(17, 65, 101);
@@ -247,7 +246,6 @@ nav .mail{
   font-family: "Lucida Sans Unicode";
   color: rgb(17, 65, 101);
   text-align: left;
-/*  background-color: green*/
 }
 .right input[type="checkbox"]{
   background-image: url(../img/checkbox.png);
@@ -290,15 +288,14 @@ main{
   border-radius: 3px;
 }
 figure {
-/*    background: #5f6a72;  Цвет фона */
   margin: 1px 0 -10px;
-  padding: 13px 0px 0px;  Поля вокруг
-  display: block; /* Блочный элемент */
-  width: 175px; /* Ширина */
+  padding: 13px 0px 0px;
+  display: block;
+  width: 175px;
   height: 200px;
-  float: left; /* Блоки выстраиваются по горизонтали */
-/*    margin: 0 10px 10px 0;  Отступы */
-  text-align: center; /* Выравнивание по центру */
+  float: left;
+/*    margin: 0 10px 10px 0; */
+  text-align: center;
 }
 figure div{
   width: 139px;
@@ -309,10 +306,9 @@ figure div{
   background-color: white;
   background-position: center;
   background-repeat: space;
-
 }
 figcaption {
-  color: #114165; /* Цвет текста */
+  color: #114165;
   font-style: italic;
   font-weight: bold;
   line-height: 24px;
@@ -337,7 +333,6 @@ figcaption {
   line-height: 2;
   vertical-align: middle;
   text-indent: 0px;
-
   text-align: left;
   -moz-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
   -webkit-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
@@ -359,7 +354,6 @@ figcaption {
   line-height: 2.4;
   vertical-align: middle;
   text-indent: 0px;
-
   text-align: left;
   -moz-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
   -webkit-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
@@ -377,7 +371,6 @@ figcaption {
   line-height: 2.4;
   vertical-align: middle;
   text-indent: 0px;
-
   text-align: left;
   -moz-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
   -webkit-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
@@ -422,7 +415,6 @@ footer span{
   color: #d9dee0;
   line-height: 1.364;
   letter-spacing: -0.04em;
-/*  text-align: center;*/
   white-space: pre;
   -moz-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
   -webkit-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
