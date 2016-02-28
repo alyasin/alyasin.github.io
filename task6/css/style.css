@@ -294,11 +294,11 @@ figure {
   float: left;
   text-align: center;
 }
-figure div{
-  width: 139px;
-  height: 124px;
-  margin: 0 auto 0;
-  padding-top: 5px;
+figure img{
+  margin: 1 auto 0;
+  padding: 6px 32px;
+  width: 74px;
+  height: 118px;
   border-radius: 10px;
   background-color: white;
   background-position: center;
