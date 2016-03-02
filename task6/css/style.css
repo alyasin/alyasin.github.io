@@ -23,8 +23,6 @@ header{
 .avtoriz{
   display: inline-block;
   margin: 1px 10px 10px 12px;
-  width: 500px;
-  height: 38px;
   width: 496px;
   height: 27px;
   border-radius: 3px;
@@ -131,8 +129,6 @@ nav .mail{
   float: left;
 }
 .menu_header{
-  width: 918px;
-  height: 41px;
   margin: 4px 0 0 -1px;
   width: 908px;
   height: 31px;
@@ -383,7 +379,6 @@ figcaption {
   background-image: url(../img/brandLogo.png)
 }
 footer{
-  margin: 0 auto;
   width: 908px;
   height: 100px;
   margin: 25px 44px 0 45px;
