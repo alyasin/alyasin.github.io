@@ -10,7 +10,7 @@
 <body>
   <header>
     <div class="container">
-      <img class="header_logo" src="img/logo_header.png" alt="">
+      <a href="#"><img class="header_logo" src="img/logo_header.png" alt=""></a>
       <nav>
         <ul class="menu">
           <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
@@ -26,18 +26,23 @@
   <div class="sliders">
     <div class="container">
       <a href="#" class="arrow__link"><img src="img/arrow_left.png" alt="" class="arrow__left"></a>
-      <article class="slider__article">
-        <h1 class="slider__header">Lorem Ipsum Dolor</h1>
-        <h2 class="slider__subheader">IT WILL MAKE ALL YOUR DREAMS COME TRUE</h2>
-        <p class="slider__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+        <div class="slider__box"> 
+          <h1 class="slider__header">Lorem Ipsum Dolor</h1>
+          <h2 class="slider__subheader">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+          <p class="slider__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+        </div>
         <img class="slider__img" src="img/iphones.png" alt="iphone">
+        <img src="img/blic.png" alt="" class="slider__blic">
         <form class="slider__list" action="#" method="get">
-          <input type="radio" name="slider__radio" value="1">
-          <input type="radio" name="slider__radio" value="2" checked>
-          <input type="radio" name="slider__radio" value="3">
-          <input type="radio" name="slider__radio" value="4">
+          <input class="slider__radiobutton" type="radio" name="slider__radiobutton" id="slider__radiobutton_1" value="1">
+          <label for="slider__radiobutton_1"></label>
+          <input class="slider__radiobutton" type="radio" name="slider__radiobutton" id="slider__radiobutton_2" value="2" checked>
+          <label for="slider__radiobutton_2"></label>
+          <input class="slider__radiobutton" type="radio" name="slider__radiobutton" id="slider__radiobutton_3" value="3">
+          <label for="slider__radiobutton_3"></label>
+          <input class="slider__radiobutton" type="radio" name="slider__radiobutton" id="slider__radiobutton_4" value="4">
+          <label for="slider__radiobutton_4"></label>
         </form>
-      </article>
       <a href="#" class="arrow__link"><img src="img/arrow_right.png" alt="" class="arrow__right"></a>
     </div>
   </div>
@@ -73,14 +78,18 @@
           <div class="testimonials__img"></div>
           <h2 class="testimonials__header">PINGBULLER <br class="testimonials__br"><span>STARTS HERE</span></h2>
           <p class="testimonials__text">&#8220;Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.&#8221;
-          Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+          Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. alyasin.github.io Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
           </p>
         </div>
         <form class="testimonials__list" action="#" method="get">
-          <input type="radio" name="testimonials__radio" value="1">
-          <input type="radio" name="testimonials__radio" value="2" checked>
-          <input type="radio" name="testimonials__radio" value="3">
-          <input type="radio" name="testimonials__radio" value="4">
+          <input class="testimonials__radiobutton" type="radio" name="testimonials__radiobutton" id="testimonials__radiobutton_1" value="1">
+          <label for="testimonials__radiobutton_1"></label>
+          <input class="testimonials__radiobutton" type="radio" name="testimonials__radiobutton" id="testimonials__radiobutton_2" value="2" checked>
+          <label for="testimonials__radiobutton_2"></label>
+          <input class="testimonials__radiobutton" type="radio" name="testimonials__radiobutton" id="testimonials__radiobutton_3" value="3">
+          <label for="testimonials__radiobutton_3"></label>
+          <input class="testimonials__radiobutton" type="radio" name="testimonials__radiobutton" id="testimonials__radiobutton_4" value="4">
+          <label for="testimonials__radiobutton_4"></label>
         </form>
       </section>
       <section class="fromblog">
@@ -90,31 +99,52 @@
           <li class="fromblog__item--2"><h3>Nunc turpis neque feugiat eget </h3><p>Posted by Admin on March 13 2012 in Category</p></li>
           <li class="fromblog__item--3"><h3>Nunc turpis neque feugiat eget </h3><p>Posted by Admin on March 13 2012 in Blog Updates</p></li>
         </ul>
-        <a class="fromblog" href="#">READ MORE HERE</a>
+        <a class="fromblog__link--960" href="#">READ MORE HERE</a>
+        <a class="fromblog__link--768" href="#">MORE BLOG POSTS</a>
       </section>
-      <div class="trust_marks">
-		<a href="#" class="trust_marks__link"><div class="trust_marks__1"></div></a>
-		<a href="#" class="trust_marks__link"><div class="trust_marks__2"></div></a>
-		<a href="#" class="trust_marks__link"><div class="trust_marks__3"></div></a>
-		<a href="#" class="trust_marks__link"><div class="trust_marks__4"></div></a>
-		<a href="#" class="trust_marks__link"><div class="trust_marks__5"></div></a>
-		<a href="#" class="trust_marks__link"><div class="trust_marks__6"></div></a>
+    </div>
+    <div class="trust_marks">
+      <div class="container">
+        <div class="trust_marks__wraper">
+		  <a href="#" class="trust_marks__link"><div class="trust_marks__1"></div></a>
+		  <a href="#" class="trust_marks__link"><div class="trust_marks__2"></div></a>
+		  <a href="#" class="trust_marks__link"><div class="trust_marks__3"></div></a>
+		  <a href="#" class="trust_marks__link"><div class="trust_marks__4"></div></a>
+		  <a href="#" class="trust_marks__link"><div class="trust_marks__5"></div></a>
+		  <a href="#" class="trust_marks__link"><div class="trust_marks__6"></div></a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="conclusion">
+  <div class="conclusion--960">
     <div class="container">
       <section class="conclusion__block">
-		<img class="header_logo" src="img/logo_footer.png" alt="">
+		<a href="#"><img class="footer_logo" src="img/logo_footer.png" alt=""></a>
 		<h4>Copyright 2013, Pingbull AS</h4>
 		<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
       </section>
       <section class="conclusion__block">
-		<h3>RECENT COMMENTS</h3>
+		<h2>RECENT COMMENTS</h2>
 		<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
       </section>
       <section class="conclusion__block">
-		<h3>NEWS CATEGORIES</h3>
+		<h2>NEWS CATEGORIES</h2>
+		<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+      </section>
+    </div>
+  </div>
+  <div class="conclusion--768">
+    <div class="container">
+      <section class="conclusion__block">
+		<h2>NEWS CATEGORIES</h2>
+		<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+      </section>
+      <section class="conclusion__block">
+		<h2>NEWS CATEGORIES</h2>
+		<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+      </section>     
+      <section class="conclusion__block">
+		<h2>NEWS CATEGORIES</h2>
 		<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
       </section>
     </div>
@@ -122,7 +152,7 @@
   <footer>
     <div class="container">
       <nav>
-        <ul class="menu">
+        <ul class="menu--footer">
           <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
           <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
           <li class="menu__item"><a class="menu__link" href="#">BLOG</a></li>
