@@ -7,12 +7,12 @@ var test = {
   
   createForm: function() {
     this.testBody.appendChild(this.testForm);
-    this.testForm.classList.add('testForm');
+    this.testForm.className = 'testForm';
   },
   
   createHeader: function(text) {
     this.testForm.appendChild(this.testHeader);
-    this.testHeader.classList.add('header');
+    this.testHeader.className = 'header';
     this.testHeader.innerHTML = text;
   },
   
