@@ -3,11 +3,6 @@ var test = {
   testBody: document.body,
   testForm: document.createElement('form'),
   testHeader: document.createElement('h2'),
-//  fragment: document.createDocumentFragment(),
-//  testQuestion: document.createElement('form'),
-//  testAnswerLabel: document.createElement('label'),
-//  testAnswerInput: document.createElement('input'),
-//  testAnswerText: document.createElement('p'),
   testButton: document.createElement('button'),
   
   createForm: function() {
