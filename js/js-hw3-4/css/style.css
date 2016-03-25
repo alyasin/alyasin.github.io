@@ -5,12 +5,29 @@
   font-weight: normal;
 }
 .testForm{
-  width: 468px;
+  width: 600px;
   margin: 0 auto;
 }
 .header{
   text-align: center;
+  margin: 25px 0;
 }
-h2{
+
+.answer{
   display: block;
+  margin: 10px 0 10px 30px;
+}
+.checkbox{
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #cfe2f3;
+}
+.answer>p{
+  display: inline-block;
+}
+.testButton{
+  display: block;
+  margin: 50px auto;
+  padding: 5px 25px;
+  background-color: #cfe2f3;
 }
