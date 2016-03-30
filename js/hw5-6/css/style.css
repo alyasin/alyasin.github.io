@@ -13,7 +13,7 @@
 .timer{
   margin: 4% auto;
   border: 8px solid black;
-  border-radius: 50px;
+  border-radius: 25px;
   background-color:aqua;
 }
 
@@ -44,7 +44,7 @@
   border: 8px solid black;
   font-family: fantasy, sans-serif;
   font-weight: 400;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 .start{
@@ -55,6 +55,7 @@
 .pause{
   float: left;
   background-color: blue;
+  display: none;
 }
 
 .clear{

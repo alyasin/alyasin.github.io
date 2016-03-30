@@ -3,11 +3,9 @@ var start = document.querySelector('.start');
 var pause = document.querySelector('.pause');
 
 clearInt(0, 'clear');
+timerId = -1;
 
 pause.setAttribute('id', 'displayNone');
-
-var d = new Date();
-d.setHours(0, 0, 0, 000);
 
 function timer() {
   timerId = setInterval(myTimer ,1);
@@ -17,15 +15,18 @@ function timer() {
 }
 
 function myTimer() {
-  var d = new Date();
+  d = new Date();
 
   var time = d.toLocaleTimeString();
-  if (d.toLocaleTimeString() < 10) {
+  if (time.length < 8) {
     time = '0' + time;
   }
   document.getElementById("time").innerHTML = time;
 
   var milliseconds = d.getMilliseconds();
+  if (milliseconds < 10) {
+    milliseconds = '0' + milliseconds
+  }
   if (milliseconds < 100) {
     milliseconds = '0' + milliseconds
   }
@@ -33,7 +34,9 @@ function myTimer() {
 }
 
 function clearInt(timerId, button) {
-  clearInterval(timerId);
+  if (timerId > 0) {
+    clearInterval(timerId);
+  }
   pause.setAttribute('id', 'displayNone');
   start.setAttribute('id', 'displayBlock');
 
