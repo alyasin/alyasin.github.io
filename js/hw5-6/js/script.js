@@ -1,10 +1,12 @@
-document.getElementById("time").innerHTML = '00:00:00';
-document.getElementById("milliseconds").innerHTML = 0;
+//document.getElementById("time").innerHTML = '00:00:00';
+//document.getElementById("milliseconds").innerHTML = 0;
 
 var start = document.querySelector('.start');
-var stop = document.querySelector('.stop');
+var pause = document.querySelector('.pause');
 
-stop.setAttribute('id', 'displayNone');
+clearInt(0, 'clear');
+
+pause.setAttribute('id', 'displayNone');
 
 var d = new Date();
 d.setHours(0, 0, 0, 000);
@@ -12,12 +14,17 @@ d.setHours(0, 0, 0, 000);
 function timer() {
   myVar = setInterval(myTimer ,1);
   start.setAttribute('id', 'displayNone');
-  stop.setAttribute('id', 'displayBlock');
+  document.querySelector('.start').innerHTML = 'Cont..';
+  pause.setAttribute('id', 'displayBlock');
 }
 
 function myTimer() {
   var d = new Date();
-  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+  var time = d.toLocaleTimeString();
+  if (d.toLocaleTimeString() < 10) {
+    time = '0' + time;
+  }
+  document.getElementById("time").innerHTML = time;
   var milliseconds = d.getMilliseconds();
   if (milliseconds < 100) {
     milliseconds = '0' + milliseconds
@@ -25,9 +32,14 @@ function myTimer() {
   document.getElementById("milliseconds").innerHTML = milliseconds;
 }
 
-function clearInt(myVar) {
+function clearInt(myVar, button) {
   clearInterval(myVar);
-  stop.setAttribute('id', 'displayNone');
+  pause.setAttribute('id', 'displayNone');
   start.setAttribute('id', 'displayBlock');
+  if (button === 'clear'){
+    document.querySelector('.start').innerHTML = 'Start';
+    document.getElementById("time").innerHTML = '00:00:00';
+    document.getElementById("milliseconds").innerHTML = 0;
+  }
 }
 

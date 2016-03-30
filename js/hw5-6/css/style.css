@@ -2,17 +2,16 @@
   margin: 0;
   padding: 0;
   font-family: monospace;
-  font-size: 100px;
-
+  font-size: 75px;
 }
 
 .wrapper{
-  width: 600px;
+  width: 648px;
   margin: 25px auto;
 }
 
 .timer{
-  margin: 0 auto;
+  margin: 4% auto;
   border: 8px solid black;
   border-radius: 50px;
   background-color:aqua;
@@ -21,12 +20,15 @@
 #time{
   text-align: center;
   margin: 0 25px;
+  font-family: monospace;
+  font-weight: bold;
   font-size: 125px;
 }
 
 #milliseconds{
   float: right;
-  margin-right: 25px;
+  margin: -25px 50px 0 0;
+  font-family: monospace;
   font-size: 30px;
 }
 
@@ -36,30 +38,29 @@
     clear: both;
 }
 
-.start{
-  float: left;
+.button{
   width: 48%;
-  margin: 1%;
-  background-color: green;
+  height: 108px;
   border: 8px solid black;
+  font-family: fantasy, sans-serif;
+  font-weight: 400;
   border-radius: 50px;
 }
 
-.stop{
+.start{
   float: left;
-  width: 48%;
-  margin: 1%;
-  border: 8px solid black;
-  border-radius: 50px;
+  background-color: green;
+}
+
+.pause{
+  float: left;
+  background-color: blue;
 }
 
 .clear{
   float: right;
-  width: 48%;
-  margin: 1%;
   background-color: red;
-  border: 8px solid black;
-  border-radius: 50px;
+
 }
 
 #displayNone{
