@@ -3,7 +3,8 @@ var start = document.querySelector('.start');
 var pause = document.querySelector('.pause');
 
 clearInt(0, 'clear');
-timerId = -1;
+var timerId = -1;
+var dStart = 0;
 
 pause.setAttribute('id', 'displayNone');
 
@@ -16,6 +17,13 @@ function timer() {
 
 function myTimer() {
   d = new Date();
+  dCurrent = d.getTime()
+  if(dStart == 0){
+    dStart = dCurrent;
+  }
+  dTimer = dCurrent - dStart + (d.getTimezoneOffset() * 60000);
+
+  d.setTime(dTimer);
 
   var time = d.toLocaleTimeString();
   if (time.length < 8) {
@@ -44,6 +52,8 @@ function clearInt(timerId, button) {
     document.querySelector('.start').innerHTML = 'Start';
     document.getElementById("time").innerHTML = '00:00:00';
     document.getElementById("milliseconds").innerHTML = 0;
+    timerId = -1;
+    dStart = 0;
   }
 }
 
