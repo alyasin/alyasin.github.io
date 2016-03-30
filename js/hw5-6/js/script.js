@@ -10,7 +10,7 @@ var d = new Date();
 d.setHours(0, 0, 0, 000);
 
 function timer() {
-  myVar = setInterval(myTimer ,1);
+  timerId = setInterval(myTimer ,1);
   start.setAttribute('id', 'displayNone');
   document.querySelector('.start').innerHTML = 'Cont..';
   pause.setAttribute('id', 'displayBlock');
@@ -32,8 +32,8 @@ function myTimer() {
   document.getElementById("milliseconds").innerHTML = milliseconds;
 }
 
-function clearInt(myVar, button) {
-  clearInterval(myVar);
+function clearInt(timerId, button) {
+  clearInterval(timerId);
   pause.setAttribute('id', 'displayNone');
   start.setAttribute('id', 'displayBlock');
 
