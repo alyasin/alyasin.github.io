@@ -5,6 +5,24 @@ var test = {
   testHeader: document.createElement('h2'),
   testButton: document.createElement('button'),
   
+  questions: [
+    {
+      question: 'Вопрос №1',
+      answer: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+      multiReturn: true
+    },
+    {
+      question: 'Вопрос №2',
+      answer: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+      multiReturn: true
+    },
+    {
+      question: 'Вопрос №3',
+      answer: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+      multiReturn: true
+    }
+  ],
+
   createForm: function() {
     this.testBody.appendChild(this.testForm);
     this.testForm.className = 'testForm';
@@ -17,14 +35,14 @@ var test = {
   },
   
   createQuestion: function(maxQuestion, maxAnswer) {
-    for ( var question = 1; question < maxQuestion + 1; question++) {
+    for ( var question = 0; question < maxQuestion; question++) {
       
       var testQuestion = document.createElement('form');
       this.testForm.appendChild(testQuestion);
       testQuestion.className = 'question ' + 'question_' + question;
-      testQuestion.innerHTML = '<h2>' + question + '. Вопрос №' + question + '</h2>';
+      testQuestion.innerHTML = '<h2>' + this.questions[question].question + '</h2>';
       
-      for (var answer = 1; answer < maxAnswer + 1; answer++) {
+      for (var answer = 0; answer < maxAnswer; answer++) {
         
         var testAnswerLabel = document.createElement('label');
         testQuestion.appendChild(testAnswerLabel);
@@ -38,7 +56,7 @@ var test = {
         
         var testAnswerText = document.createElement('p');
         testAnswerLabel.appendChild(testAnswerText);
-        testAnswerText.innerHTML = 'Вариант ответа №' + answer;  
+        testAnswerText.innerHTML = this.questions[question].answer[answer];
       } 
     }
   },
@@ -47,7 +65,7 @@ var test = {
     this.testForm.appendChild(this.testButton);
     this.testButton.className = 'testButton';
     this.testButton.innerHTML = '<h2>' + text + '</h2>';
-  },
+  }
 }
 
 test.createForm();
