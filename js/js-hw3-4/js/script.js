@@ -35,14 +35,19 @@ var test = {
   },
   
   createQuestion: function(maxQuestion, maxAnswer) {
-    for ( var question = 0; question < maxQuestion; question++) {
+
+    var quantityQuestion = this.questions.length;
+
+    for ( var question = 0; question < quantityQuestion; question++) {
       
       var testQuestion = document.createElement('form');
       this.testForm.appendChild(testQuestion);
       testQuestion.className = 'question ' + 'question_' + question;
       testQuestion.innerHTML = '<h2>' + this.questions[question].question + '</h2>';
       
-      for (var answer = 0; answer < maxAnswer; answer++) {
+      var quantityAnswer = test.questions[question].answer.length;
+
+      for (var answer = 0; answer < quantityAnswer; answer++) {
         
         var testAnswerLabel = document.createElement('label');
         testQuestion.appendChild(testAnswerLabel);
