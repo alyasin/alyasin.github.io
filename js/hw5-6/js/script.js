@@ -3,7 +3,6 @@ var start = document.querySelector('.start');
 var pause = document.querySelector('.pause');
 
 var timerId = -1;
-var dStart = 0;
 
 clearInt(timerId, 'clear');
 
@@ -82,8 +81,6 @@ function clearInt(timerId, button) {
     document.getElementById("time").innerHTML = '00:00:00';
     document.getElementById("milliseconds").innerHTML = 0;
 
-    timerId = -1;
     dStart = 0;
-//    dPause = 0;
   }
 }
