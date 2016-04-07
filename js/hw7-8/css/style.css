@@ -1,0 +1,57 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  min-width: 480px;
+}
+.tabs{
+  margin: 10px;
+  display:inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+.tabs > div{
+  padding: 20px 10px;
+}
+.tabs_caption{
+  margin: 10px 10px 0;
+  padding-top: 10px;
+  height: 39px;
+  background:#ddd;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+.tabs ul li{
+  margin:0 0 0 10px;
+  cursor:pointer;
+  display:block;
+  float:left;
+  padding:10px 10px;
+  background:#eee;
+  border: 1px solid #999;
+  border-radius: 3px 3px 0 0;
+}
+.tabs ul li.active{
+  background: white;
+  border-bottom: 1px solid #fff;
+}
+.tabs_content {
+  display: none;
+}
+.tabs_content.active {
+  display: block;
+}
+form{
+  margin: 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+label{
+  margin: 5px 10px;
+  display: inline-block;
+  width: 75px;
+}
+input{
+  border-radius: 3px;
+}
