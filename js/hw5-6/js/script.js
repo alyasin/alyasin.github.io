@@ -3,6 +3,11 @@ var start = document.querySelector('.start');
 var pause = document.querySelector('.pause');
 
 var timerId = -1;
+var dStart;
+var hhStart;
+var mmStart;
+var ssStart;
+var mssStart;
 
 clearInt(timerId, 'clear');
 
@@ -67,7 +72,7 @@ function myTimer() {
 
 function clearInt(timerId, button) {
 
-  if (timerId > 0) {
+  if (timerId > -1) {
 
     clearInterval(timerId);
   }
