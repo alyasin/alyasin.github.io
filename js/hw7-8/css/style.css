@@ -52,6 +52,21 @@ label{
   display: inline-block;
   width: 75px;
 }
+.input_box{
+  display: inline-block;
+}
 input{
   border-radius: 3px;
 }
+
+
+
+*[tooltip]:hover:after {
+  content: attr(tooltip);
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #eee;
+  padding: 5px;
+
+}
+
