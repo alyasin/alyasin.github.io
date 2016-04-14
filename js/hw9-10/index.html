@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hw_9-10_js+jQ</title>
+  <link rel="stylesheet" href="css/jcarousel.basic.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/jcarousel.basic.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#wrapper_select" class="menu_item wrapper_select">Select</a></li>
+        <li><a href="#wrapper_carousel" class="menu_item wrapper_carousel">Carousel</a></li>
+        <li><a href="#wrapper_checkbox" class="menu_item wrapper_checkbox">Checkbox</a></li>
+        <li class="dropdown">
+          <a href="#">Menu</a>
+          <ul class="sub-menu">
+            <li><a href="#">Sub-menu 1</a></li>
+            <li><a href="#">Sub-menu 2</a></li>
+            <li><a href="#">Sub-menu 3</a></li>
+            <li><a href="#">Sub-menu 4</a></li>
+            <li><a href="#">Sub-menu 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="wrapper_carousel" class="deactive">
+<!--    <h2>Carousel</h2>-->
+    <div class="jcarousel-wrapper" id="jcarousel-wrapper">
+      <div class="jcarousel">
+        <ul>
+          <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+        </ul>
+      </div>
+
+      <p class="photo-credits">
+                    Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+      </p>
+
+      <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+      <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+      <p class="jcarousel-pagination">
+
+      </p>
+    </div>
+  </section>
+  <section id="wrapper_select" class="active">
+<!--   <h2>Select</h2>-->
+    <select name="num" id="select">
+      <option value=""></option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+      <option value="5">Option 5</option>
+      <option value="6">Option 6</option>
+    </select>
+  </section>
+  <section id="wrapper_checkbox"  class="deactive">
+    <div class="main checkbox_jquery_style">
+      <h2>jQuery style</h2>
+	  <form action="#">
+	    <div>
+	      <label for="ch1">label 1</label>
+	      <input type="checkbox" class="niceCheck" id="ch1" tabindex="1">
+	    </div>
+	    <div>
+	      <label for="ch2">label 2</label>
+	      <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2">
+	    </div>
+	    <div>
+	      <label for="ch3">label 3</label>
+	      <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled">
+	    </div>
+	  </form>
+    </div>
+    <div class="main checkbox_css_style">
+      <h2>CSS style</h2>
+	  <form action="#">
+	    <label for="css_ch1">label 1 <input type="checkbox" id="css_ch1"></label>
+	    <label for="css_ch2">label 2 <input type="checkbox" id="css_ch2" checked></label>
+	    <label for="css_ch3">label 3 <input type="checkbox" id="css_ch3" checked disabled></label>
+	  </form>
+    </div>
+  </section>
+</body>
+</html>
