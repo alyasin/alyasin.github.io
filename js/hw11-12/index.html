@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js_hw_11-12</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/micro-templates.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <div class="wrapper wrapper-carousel">
+
+    <div class="carousel-arrow-left"><span>Влево</span></div>
+
+    <div class="carousel-hider">
+      <ul class="carousel-list">
+        <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 1</p></li>
+        <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 2</p></li>
+        <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 3</p></li>
+        <li class="carousel-element"><img src="img/img4.jpg"><p>Описание 4</p></li>
+        <li class="carousel-element"><img src="img/img5.jpg"><p>Описание 5</p></li>
+        <li class="carousel-element"><img src="img/img6.jpg"><p>Описание 6</p></li>
+        <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 7</p></li>
+        <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 8</p></li>
+        <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 9</p></li>
+        <li class="carousel-element"><img src="img/img4.jpg"><p>Описание 10</p></li>
+        <li class="carousel-element"><img src="img/img5.jpg"><p>Описание 11</p></li>
+        <li class="carousel-element"><img src="img/img6.jpg"><p>Описание 12</p></li>
+      </ul>
+    </div>
+
+    <div class="carousel-arrow-right"><span>Вправо</span></div>
+
+  </div>
+
+  <script type="text/template" id="test">
+    <form class="wrapper testForm">
+      <h2 class="header">Тест по программированию</h2>
+      <% for (var question = 0; question < data.length; question++) {%>
+          <h3 class="question question_<%= question %>"><%= data[question].question %></h3>
+            <% for (var answer = 0; answer < data[question].answer.length; answer++) {%>
+              <label class="answer answer_<%= question %>_<%= answer %>">
+                <input class="checkbox" type="checkbox" id="answer_<%= question %>_<%= answer %>">
+                <p><%= data[question].answer[answer] %></p>
+              </label>
+            <% } %>
+      <% } %>
+      <button class="testButton">
+        <h2>Проверить мои результаты</h2>
+      </button>
+    </form>
+  </script>
+
+</body>
+</html>
