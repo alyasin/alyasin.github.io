@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js_hw_13-14</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/micro-templates.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <script type="text/template" id="test">
+    <div class="wrapper testForm">
+      <h1 class="header">Тест по программированию</h1>
+      <% for (var question = 0; question < data.length; question++) {%>
+        <form class="form_question form_question_<%= question %>">
+          <h2 class="question question_<%= question %>"><%= data[question].question %></h2>
+            <% for (var answers = 0; answers < data[question].answers.length; answers++) {%>
+              <label class="answers answers_<%= question %>_<%= answers %>">
+                <input class="checkbox" type="checkbox" id="answers_<%= question %>_<%= answers %>">
+                <h3><%= data[question].answers[answers] %></h3>
+              </label>
+            <% } %>
+        </form>
+      <% } %>
+      <button class="testButton">
+        <h2>Проверить мои результаты</h2>
+      </button>
+    </div>
+  </script>
+
+
+
+</body>
+</html>
