@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.page {
+  width: 640px;
+  margin: 0 auto;
+}
+.searchForm {
+  width: 620px;
+  height: 40px;
+  margin: 10px;
+  position: relative;
+}
+.requestText {
+  display: inline-block;
+  width: 556px;
+  height: 36px;
+  padding: 0 10px;
+  font: 16px Arial;
+/*  text-indent: 10px;*/
+}
+.searchButton {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: -40px;
+  float: right;
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  right: 0;*/
+  background-color: royalblue;
+}
+.searchButtonImg {
+  display: inline-block;
+  background: url(../img/loupe.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin: 6px;
+}
+.resultsBlock {
+	margin: 10px;
+}
+.resultsBlock li{
+  list-style: none;
+  margin: 10px 0;
+}
+.greenBlock{
+  color: green;
+}
