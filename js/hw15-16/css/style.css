@@ -18,7 +18,6 @@
   height: 36px;
   padding: 0 10px;
   font: 16px Arial;
-/*  text-indent: 10px;*/
 }
 .searchButton {
   display: inline-block;
@@ -26,9 +25,6 @@
   height: 40px;
   margin-left: -40px;
   float: right;
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  right: 0;*/
   background-color: royalblue;
 }
 .searchButtonImg {
@@ -45,6 +41,14 @@
   list-style: none;
   margin: 10px 0;
 }
+.resultsBlock li a{
+  font-size: 18px;
+}
 .greenBlock{
   color: green;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+.greenBlock~p {
+  font-size: small;
 }
