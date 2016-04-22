@@ -63,7 +63,7 @@ $(function () {
   Student.prototype.studyPlace = 'UCLA';
   Student.prototype.stipend = 1000;
   Student.prototype.watchSeries = function () {
-    console.log("Exams are still far - it's time to watch the TV series");
+    console.log("Exams are still far - it's time to watch the TV series...");
   };
 
   var newWorker = [];
