@@ -15,8 +15,9 @@
       background-size:cover;
       background-attachment: fixed;
     }
-    div{
-      margin: 10px;
+    .wrapper {
+	  margin: 10px;
+      visibility: hidden;
     }
     a{
       display: table;
@@ -36,6 +37,7 @@
       position: fixed;
       right: 10px;
       bottom: 10px;
+      visibility: hidden;
     }
     img{
       width: 100px;
@@ -44,7 +46,7 @@
   </style>
 </head>
 <body>
-  <div>
+  <div class="wrapper">
     <a href="html&css/task3.1/index.html" target="_blank" title="html&css 3">HTML5&CSS3 - начало</a>
     <a href="html&css/task4/index.html" target="_blank" title="html&css 4">Позиционирование элементов</a>
     <a href="html&css/task5/5/index.html" target="_blank" title="html&css 5.1">Формы, шрифты, цвета и прозрачность</a>
@@ -69,5 +71,9 @@
     <a href="js/hw/index.html" target="_blank" title="">...</a>
   </div>
   <a class="go4it-crop" href="http://goit.ua/" target="_blank"><img src="go4it.png" alt="go4it"></a>
+  <script>
+    document.querySelector('.wrapper').style.visibility = "visible";
+    document.querySelector('.go4it-crop').style.visibility = "visible";
+  </script>
 </body>
 </html>
