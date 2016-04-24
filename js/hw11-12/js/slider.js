@@ -1,4 +1,6 @@
-$(document).ready(function() {
+(function($) {
+  $.fn.slider = function(){
+
 
   var leftUIEl = $('.carousel-arrow-left');
   var rightUIEl = $('.carousel-arrow-right');
@@ -23,4 +25,6 @@ $(document).ready(function() {
     }
   });
 
-});
+    return this;
+  };
+})(jQuery);

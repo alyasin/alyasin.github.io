@@ -23,3 +23,8 @@ $(function () {
   $('body').append(content);
 
 });
+
+$(function() {
+    $('.wrapper-carousel').slider();
+});
+
